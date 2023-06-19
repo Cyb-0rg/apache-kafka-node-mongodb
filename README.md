@@ -95,8 +95,6 @@ Please note that this project assumes you have Docker and Docker Compose install
 
 Feel free to explore the code and customize it according to your needs. Enjoy using the Apache Kafka Node MongoDB Producer-Consumer application!
 
-![Screenshot](path/to/screenshot.png)
-
 
 
 
