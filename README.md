@@ -43,7 +43,7 @@ To run the project, follow these steps:
 make sure that the program excutes all 3 containers effectively, like this:
 pic here!!
 
-## optional command; incase kafka image fails to recognize the topic, you may execute this command to create a new topic [university].
+### Optional command; in case kafka image fails to recognize the topic, you may execute this command to create a new topic [university].
 <pre>
 docker exec -it kafka /opt/bitnami/kafka/bin/kafka-topics.sh --create --topic university --replication-factor 1 --partitions 1 --bootstrap-server kafka:9092
 </pre>
