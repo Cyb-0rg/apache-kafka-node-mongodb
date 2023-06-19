@@ -14,8 +14,6 @@ pic here!
 
 ## Purpose
 
-## Purpose
-
 The Apache-Kafka Node MongoDB Producer-Consumer application serves the purpose of providing real-time updates for a school database. It consists of three main components: the producer, the consumer, and the catalyst.
 
 - Producer: The producer component is responsible for generating new student records and sending them to Kafka topics. These student records represent new enrollments in the school database. The producer ensures that any changes made to the student records are immediately captured and sent to the Kafka topics, enabling real-time updates.
@@ -39,10 +37,11 @@ To run the project, follow these steps:
 
 
 <pre>
-docker-compose up
+    docker-compose up
 </pre>
 
-pic here!
+make sure that the program excutes all 3 containers effectively, like this:
+pic here!!
 
 ## optional command; incase kafka image fails to recognize the topic, you may execute this command to create a new topic [university].
 <pre>
@@ -50,36 +49,48 @@ docker exec -it kafka /opt/bitnami/kafka/bin/kafka-topics.sh --create --topic un
 </pre>
 
 
-# This nodejs project was developed using [Node version 19] and [npm version 9]
-<pre>
-npm install 
-</pre>
-
-
-## Dependencies
-
-The project was developed using Node.js version 19 and npm version 9. Ensure you have these versions installed before running the project.
-
-## Additional Notes
-
-Please note that this project assumes you have Docker and Docker Compose installed on your system. Ensure that your environment meets these requirements before proceeding with the setup.
+### This nodejs project was developed using [Node version 19] and [npm version 9]
 
 <pre>
-npm run start:consumer
+    npm install 
 </pre>
 
+catalyst creates the first records to the collection; also updates the collction by adding a new record every 10 sec or so.
+
 <pre>
-npm run start:producer
+    npm run start:catalyst
 </pre>
+
+wait for 10 sec and run:
+
+<pre>
+    npm run start:consumer
+</pre>
+
+then:
+
+<pre>
+    npm run start:producer
+</pre>
+
+### Note: these npm run commands should be in three different terminals(consoles)
 
 
 <pre>
     docker logs <container_name/ID>
 </pre>
 
+## Dependencies
 
+The project was developed using Node.js version 19 and npm version 9. Ensure you have these versions installed before running the project. (Check out the package.json file for full details)
 
+ - mongoose and mongodb 
+ - node-rdkafka 
+ - avsc
 
+## Additional Notes
+
+Please note that this project assumes you have Docker and Docker Compose installed on your system. Ensure that your environment meets these requirements before proceeding with the setup.
 
 Feel free to explore the code and customize it according to your needs. Enjoy using the Apache Kafka Node MongoDB Producer-Consumer application!
 
