@@ -41,7 +41,8 @@ To run the project, follow these steps:
 </pre>
 
 make sure that the program excutes all 3 containers effectively, like this:
-pic here!!
+![image](https://github.com/Cyb-0rg/apache-kafka-node-mongodb/assets/50844224/91fcaf57-b01c-47a6-bbe5-329ac7b23e5d)
+
 
 ### Optional command; in case kafka image fails to recognize the topic, you may execute this command to create a new topic [university].
 <pre>
