@@ -10,7 +10,8 @@ The application is divided into two main components:
 - Consumer: The consumer application subscribes to Kafka topics, consumes the messages, and console logs it.
 - Catalyst: The catalyst application updates the mongo collection, creates new registry periodically, and stores them in a MongoDB database.
 
-pic here!
+![image](https://github.com/Cyb-0rg/apache-kafka-node-mongodb/assets/50844224/6708a39c-821e-4b33-aec6-fbda56f726c7)
+
 
 ## Purpose
 
