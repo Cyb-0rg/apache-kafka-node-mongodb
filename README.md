@@ -90,6 +90,15 @@ The project was developed using Node.js version 19 and npm version 9. Ensure you
  - node-rdkafka 
  - avsc
 
+
+
+## Potential Future Improvements
+
+1. Utilize MongoDB's `changeStream()` feature: Implementing `changeStream()` in the producer application can provide a more efficient and streamlined way to detect and publish new data changes to Kafka topics.
+
+2. Create Helm charts and deploy to Kubernetes: Creating Helm charts for this application and deploying it on a Kubernetes cluster can enhance scalability, manageability, and ease of deployment. It also allows for better utilization of Kubernetes features like scaling, service discovery, and rolling updates. Consider uploading the Helm charts to a dedicated GitHub repository for convenient deployment.
+
+
 ## Additional Notes
 
 Please note that this project assumes you have Docker and Docker Compose installed on your system. Ensure that your environment meets these requirements before proceeding with the setup.
